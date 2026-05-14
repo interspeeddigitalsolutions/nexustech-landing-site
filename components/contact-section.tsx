@@ -20,15 +20,29 @@ export function ContactSection() {
             Get in Touch
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extralight leading-[1.15] tracking-tight text-balance">
-            {"Let's discuss your"}<br />next project
+            Let’s discuss your next software project.
           </h2>
-          <div className="mt-10">
+          <p className="mt-8 text-sm md:text-base font-light text-background/55 leading-relaxed max-w-lg">
+            Have an idea, an existing system to improve, or a business process you want to automate? Nexus Tech Solution can help you plan, build, and launch the right software solution.
+          </p>
+          <div className="mt-10 flex flex-col gap-6">
             <a
-              href="mailto:studio@vossarchitects.com"
+              href="mailto:contact@nexus-tech-solution.com"
               className="group inline-flex items-center gap-3 text-sm tracking-wide text-background/60 hover:text-background transition-colors duration-500"
             >
               <span className="border-b border-background/20 pb-0.5 group-hover:border-background/60 transition-colors duration-500">
-                studio@vossarchitects.com
+                contact@nexus-tech-solution.com
+              </span>
+              <ArrowUpRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+            </a>
+            <a
+              href="https://nexus-tech-solution.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 text-sm tracking-wide text-background/60 hover:text-background transition-colors duration-500"
+            >
+              <span className="border-b border-background/20 pb-0.5 group-hover:border-background/60 transition-colors duration-500">
+                nexus-tech-solution.com
               </span>
               <ArrowUpRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
             </a>
@@ -41,31 +55,14 @@ export function ContactSection() {
             bodyVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
             <div>
               <p className="text-[11px] tracking-[0.3em] uppercase text-background/35 mb-5">
-                Stockholm
+                Location
               </p>
               <p className="text-sm leading-[1.75] text-background/55">
-                Strandvagen 7B<br />
-                114 56 Stockholm<br />
-                Sweden
-              </p>
-              <p className="text-sm text-background/55 mt-4">
-                +46 8 123 456 78
-              </p>
-            </div>
-            <div>
-              <p className="text-[11px] tracking-[0.3em] uppercase text-background/35 mb-5">
-                Copenhagen
-              </p>
-              <p className="text-sm leading-[1.75] text-background/55">
-                Bredgade 42<br />
-                1260 Copenhagen K<br />
-                Denmark
-              </p>
-              <p className="text-sm text-background/55 mt-4">
-                +45 33 12 34 56
+                United States<br />
+                Serving clients globally
               </p>
             </div>
           </div>

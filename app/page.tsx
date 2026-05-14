@@ -5,6 +5,8 @@ import { StudioSection } from "@/components/studio-section"
 import { EditorialBreak } from "@/components/editorial-break"
 import { ApproachSection } from "@/components/approach-section"
 import { JournalSection } from "@/components/journal-section"
+import { TechStack } from "@/components/tech-stack"
+import { IndustriesSection } from "@/components/industries-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
@@ -17,7 +19,9 @@ export default function Page() {
       <EditorialBreak />
       <StudioSection />
       <ApproachSection />
+      <IndustriesSection />
       <JournalSection />
+      <TechStack />
       <ContactSection />
       <Footer />
     </main>

@@ -1,17 +1,18 @@
 import Link from "next/link"
 
 const footerLinks = [
+  { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
-  { label: "Studio", href: "#studio" },
-  { label: "Approach", href: "#approach" },
-  { label: "Journal", href: "#journal" },
+  { label: "About", href: "#about" },
+  { label: "Process", href: "#process" },
   { label: "Contact", href: "#contact" },
 ]
 
 const socialLinks = [
-  { label: "Instagram", href: "#" },
   { label: "LinkedIn", href: "#" },
-  { label: "Pinterest", href: "#" },
+  { label: "Facebook", href: "#" },
+  { label: "GitHub", href: "#" },
+  { label: "YouTube", href: "#" },
 ]
 
 export function Footer() {
@@ -23,11 +24,10 @@ export function Footer() {
             href="/"
             className="text-xs font-medium tracking-[0.3em] uppercase text-foreground"
           >
-            Voss Architects
+            Nexus Tech Solution
           </Link>
-          <p className="text-sm leading-[1.75] text-muted-foreground mt-5 max-w-xs">
-            Award-winning architecture studio based in Stockholm and Copenhagen, shaping spaces
-            across Scandinavia since 2003.
+          <p className="text-sm leading-[1.75] text-muted-foreground mt-5 max-w-sm">
+            AI-first software company building web applications, business automation, healthcare platforms, recruitment systems, GIS solutions, and custom digital products.
           </p>
         </div>
 
@@ -68,10 +68,10 @@ export function Footer() {
 
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between pt-8 border-t border-border gap-4">
         <p className="text-[11px] tracking-[0.1em] text-muted-foreground/50">
-          {"Voss Architects. All rights reserved."}
+          © 2026 Nexus Tech Solution. All rights reserved.
         </p>
-        <p className="text-[11px] tracking-[0.1em] text-muted-foreground/50">
-          Stockholm & Copenhagen
+        <p className="text-[11px] tracking-[0.1em] text-muted-foreground/50 italic">
+          Building smart software for growing businesses.
         </p>
       </div>
     </footer>
