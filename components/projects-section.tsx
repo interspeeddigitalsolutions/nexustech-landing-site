@@ -53,6 +53,22 @@ const projects = [
     image: "/nexustech-projects/AquaSafe Satellite Intelligence.png",
     description: "A satellite-based solution designed to detect and monitor water bodies in remote areas to help prevent child drowning incidents through predictive analysis and environmental monitoring.",
   },
+  {
+    title: "Docuhealth AI",
+    category: "AI Medical Document Processing",
+    year: "2024",
+    location: "Global",
+    image: "/nexustech-projects/Docuhealth AI.png",
+    description: "An AI-powered healthcare document system that scans medical reports, prescriptions, and paper-based records, then converts them into structured digital forms with extracted patient information, test details, clinical data, and document fields.",
+  },
+  {
+    title: "FastFalcon",
+    category: "Food Delivery & Logistics Platform",
+    year: "2024",
+    location: "Global",
+    image: "/nexustech-projects/FastFalcon.webp",
+    description: "A food delivery and logistics app that connects customers, restaurants, and nearby delivery personnel through smart order assignment and real-time delivery management.",
+  },
 ]
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
@@ -62,21 +78,13 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
   return (
     <div
       ref={ref}
-      className={`bg-background group cursor-pointer transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+      className={`bg-background group cursor-pointer transition-all duration-700 border-b border-border md:border-b-0 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
         }`}
       style={{ transitionDelay: `${(index % 2) * 150}ms` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="overflow-hidden">
-        <img
-          src={project.image || "/placeholder.svg"}
-          alt={`${project.title} - ${project.category}`}
-          className={`w-full aspect-[4/3] object-cover transition-all duration-[800ms] ease-out ${hovered ? "scale-[1.04]" : "scale-100"
-            }`}
-        />
-      </div>
-      <div className="p-6 md:p-8">
+      <div className="p-6 md:p-8 pb-4">
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-start gap-4">
             <span className="text-[11px] tracking-[0.15em] text-muted-foreground/50 mt-1.5 tabular-nums">
@@ -96,6 +104,18 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
               }`}
           />
         </div>
+      </div>
+
+      <div className="overflow-hidden">
+        <img
+          src={project.image || "/placeholder.svg"}
+          alt={`${project.title} - ${project.category}`}
+          className={`w-full aspect-[4/3] object-cover transition-all duration-[800ms] ease-out ${hovered ? "scale-[1.04]" : "scale-100"
+            }`}
+        />
+      </div>
+
+      <div className="p-6 md:p-8 pt-8">
         <p className="text-sm font-light text-muted-foreground/70 leading-relaxed pl-9 max-w-md">
           {project.description}
         </p>
@@ -125,7 +145,7 @@ export function ProjectsSection() {
             Projects & Solutions
           </h2>
           <p className="text-sm md:text-base font-light text-muted-foreground leading-relaxed">
-            We work across healthcare, recruitment, agriculture intelligence, telemedicine, business automation, and AI-powered platforms. Our focus is to build practical software that solves real business problems.
+            We work across healthcare, recruitment, agriculture intelligence, telemedicine, food delivery & logistics, business automation, and AI-powered platforms. Our focus is to build practical software that solves real business problems.
           </p>
         </div>
         <span className="text-[11px] tracking-[0.15em] text-muted-foreground/50 mt-8 md:mt-0">

@@ -48,7 +48,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="md:col-span-2 md:col-start-11">
+        {/* <div className="md:col-span-2 md:col-start-11">
           <p className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground/50 mb-5">
             Social
           </p>
@@ -63,7 +63,7 @@ export function Footer() {
               </a>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between pt-8 border-t border-border gap-4">

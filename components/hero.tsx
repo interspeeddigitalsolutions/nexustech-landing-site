@@ -12,7 +12,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-screen flex flex-col justify-end overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex flex-col overflow-hidden pt-32 pb-16 md:pt-44 md:pb-20">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
@@ -27,7 +27,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 pb-16 md:px-12 lg:px-20 md:pb-20">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-20">
         <div className="max-w-5xl">
           <div
             className={`overflow-hidden mb-6 transition-all duration-1000 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
