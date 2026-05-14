@@ -7,8 +7,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Nexus Tech Solution — Contemporary Architecture & Design',
-  description: 'Award-winning architecture studio specializing in residential, cultural, and commercial projects. Shaping spaces that define how we live.',
+  title: "Nexus Tech Solution — AI-first Software Company",
+  description: "Building smart software solutions for businesses ready to grow. Specializing in AI-powered platforms, custom web applications, and business automation.",
 }
 
 export const viewport: Viewport = {
