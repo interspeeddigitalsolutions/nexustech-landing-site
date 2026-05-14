@@ -9,6 +9,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata: Metadata = {
   title: "Nexus Tech Solution — AI-first Software Company",
   description: "Building smart software solutions for businesses ready to grow. Specializing in AI-powered platforms, custom web applications, and business automation.",
+  icons: {
+    icon: "/nexustech-logo.png",
+    shortcut: "/nexustech-logo.png",
+    apple: "/nexustech-logo.png",
+  },
 }
 
 export const viewport: Viewport = {

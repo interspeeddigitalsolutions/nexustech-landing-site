@@ -22,9 +22,16 @@ export function Footer() {
         <div className="md:col-span-5">
           <Link
             href="/"
-            className="text-xs font-medium tracking-[0.3em] uppercase text-foreground"
+            className="flex items-center gap-3"
           >
-            Nexus Tech Solution
+            <img
+              src="/nexustech-logo.png"
+              alt="Nexus Tech Solution"
+              className="h-8 w-auto"
+            />
+            <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-foreground">
+              NexusTech
+            </span>
           </Link>
           <p className="text-sm leading-[1.75] text-muted-foreground mt-5 max-w-sm">
             AI-first software company building web applications, business automation, healthcare platforms, recruitment systems, GIS solutions, and custom digital products.

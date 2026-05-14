@@ -37,10 +37,16 @@ export function Navigation() {
       <nav className="flex items-center justify-between px-6 py-5 md:px-12 lg:px-20">
         <Link
           href="/"
-          className={`text-xs font-medium tracking-[0.3em] uppercase transition-colors duration-500 ${scrolled ? "text-foreground" : "text-background"
-            }`}
+          className="flex items-center gap-3"
         >
-          Nexus Tech Solution
+          <img
+            src="/nexustech-logo.png"
+            alt="Nexus Tech Solution"
+            className={`h-8 w-auto transition-all duration-500 ${scrolled ? "" : "brightness-0 invert"}`}
+          />
+          <span className={`text-[14px] font-medium tracking-[0.2em] uppercase transition-colors duration-500 ${scrolled ? "text-foreground" : "text-background"}`}>
+            NexusTech
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10">
@@ -49,8 +55,8 @@ export function Navigation() {
               key={link.label}
               href={link.href}
               className={`text-[11px] tracking-[0.15em] uppercase transition-colors duration-500 hover:opacity-100 ${scrolled
-                  ? "text-muted-foreground hover:text-foreground"
-                  : "text-background/60 hover:text-background"
+                ? "text-muted-foreground hover:text-foreground"
+                : "text-background/60 hover:text-background"
                 }`}
             >
               {link.label}
