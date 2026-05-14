@@ -10,7 +10,7 @@ const projects = [
     category: "AI Recruitment Platform",
     year: "2024",
     location: "Global",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80",
+    image: "/nexustech-projects/Jobflix.png",
     description: "A modern hiring platform designed to help companies manage job posts, candidate screening, video interviews, and AI-assisted evaluation.",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     category: "Healthcare Appointment Platform",
     year: "2023",
     location: "Global",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+    image: "/nexustech-projects/MyVisits.webp",
     description: "A healthcare booking system where patients can search providers, view available time slots, and connect with services more easily.",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     category: "Video Consultation & Digital Prescription",
     year: "2023",
     location: "Global",
-    image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1200&q=80",
+    image: "/nexustech-projects/Telemedicine Platform.webp",
     description: "A telemedicine solution that allows doctors and patients to connect through video consultation and manage digital prescriptions.",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     category: "Laboratory Information System",
     year: "2022",
     location: "Global",
-    image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=1200&q=80",
+    image: "/nexustech-projects/LIS System.webp",
     description: "A digital system for medical laboratories to manage patient records, test requests, reports, billing, and internal operations.",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     category: "Workflow Automation & Internal Tools",
     year: "2024",
     location: "Global",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+    image: "/nexustech-projects/Custom Business Automation.png",
     description: "Tailor-made software tools that help businesses reduce manual work, organize operations, and improve productivity.",
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     category: "GIS & Remote Sensing for Public Safety",
     year: "2024",
     location: "Rural Areas",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+    image: "/nexustech-projects/AquaSafe Satellite Intelligence.png",
     description: "A satellite-based solution designed to detect and monitor water bodies in remote areas to help prevent child drowning incidents through predictive analysis and environmental monitoring.",
   },
 ]
@@ -62,9 +62,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
   return (
     <div
       ref={ref}
-      className={`bg-background group cursor-pointer transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-      }`}
+      className={`bg-background group cursor-pointer transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+        }`}
       style={{ transitionDelay: `${(index % 2) * 150}ms` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -73,9 +72,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         <img
           src={project.image || "/placeholder.svg"}
           alt={`${project.title} - ${project.category}`}
-          className={`w-full aspect-[4/3] object-cover transition-all duration-[800ms] ease-out ${
-            hovered ? "scale-[1.04]" : "scale-100"
-          }`}
+          className={`w-full aspect-[4/3] object-cover transition-all duration-[800ms] ease-out ${hovered ? "scale-[1.04]" : "scale-100"
+            }`}
         />
       </div>
       <div className="p-6 md:p-8">
@@ -94,9 +92,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
             </div>
           </div>
           <ArrowUpRight
-            className={`h-4 w-4 text-muted-foreground/40 transition-all duration-300 mt-1.5 ${
-              hovered ? "translate-x-0.5 -translate-y-0.5 text-foreground" : ""
-            }`}
+            className={`h-4 w-4 text-muted-foreground/40 transition-all duration-300 mt-1.5 ${hovered ? "translate-x-0.5 -translate-y-0.5 text-foreground" : ""
+              }`}
           />
         </div>
         <p className="text-sm font-light text-muted-foreground/70 leading-relaxed pl-9 max-w-md">
@@ -117,9 +114,8 @@ export function ProjectsSection() {
     <section id="projects" className="px-6 py-28 md:px-12 lg:px-20 md:py-36">
       <div
         ref={ref}
-        className={`flex flex-col md:flex-row md:items-end justify-between mb-20 pb-6 border-b border-border transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+        className={`flex flex-col md:flex-row md:items-end justify-between mb-20 pb-6 border-b border-border transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
       >
         <div className="max-w-2xl">
           <p className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground mb-3">
