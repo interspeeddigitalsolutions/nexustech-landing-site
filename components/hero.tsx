@@ -46,7 +46,7 @@ export function Hero() {
               }`}
           >
             <h1 className="text-[clamp(2.25rem,6vw,5.5rem)] font-extralight leading-[1.05] tracking-[-0.03em] text-background text-balance drop-shadow-2xl">
-              We build smart software solutions
+              We build smart software solutions&nbsp;
               <br className="hidden md:block" />
               for businesses ready to grow.
             </h1>
